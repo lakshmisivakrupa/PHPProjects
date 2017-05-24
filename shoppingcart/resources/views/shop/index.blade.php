@@ -35,6 +35,7 @@
     @endforeach
   </div>
 @endforeach
+{{$products->links()}}  
 @else
 <p>Sorry,No matching Search Results</p>
 @endif
