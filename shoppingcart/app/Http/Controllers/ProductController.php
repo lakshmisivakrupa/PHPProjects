@@ -14,7 +14,7 @@ class ProductController extends Controller
 {
     public function getIndex()
     {
-    	$products = Product::all();
+    	$products = Product::paginate(3);
     	 return view('shop.index', ['products' =>$products]);
     }
      public function getaddToCart(Request $request,$id)
