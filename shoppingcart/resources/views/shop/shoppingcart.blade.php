@@ -31,16 +31,16 @@
                                 <option {{ $product['qty'] == 3 ? 'selected' : '' }}>3</option>
                                 <option {{ $product['qty'] == 4 ? 'selected' : '' }}>4</option>
                                 <option {{ $product['qty'] == 5 ? 'selected' : '' }}>5</option>
-				<option {{ $product['qty'] == 6 ? 'selected' : '' }}>5</option>
-				<option {{ $product['qty'] == 7 ? 'selected' : '' }}>5</option>
-				<option {{ $product['qty'] == 8 ? 'selected' : '' }}>5</option>
-				<option {{ $product['qty'] == 9 ? 'selected' : '' }}>5</option>
-				<option {{ $product['qty'] == 10 ? 'selected' : '' }}>5</option>
-				<option {{ $product['qty'] == 11 ? 'selected' : '' }}>5</option>
-				<option {{ $product['qty'] == 12 ? 'selected' : '' }}>5</option>
-				<option {{ $product['qty'] == 13 ? 'selected' : '' }}>5</option>
-				<option {{ $product['qty'] == 14 ? 'selected' : '' }}>5</option>
-				<option {{ $product['qty'] == 15 ? 'selected' : '' }}>5</option>
+				<option {{ $product['qty'] == 6 ? 'selected' : '' }}>6</option>
+				<option {{ $product['qty'] == 7 ? 'selected' : '' }}>7</option>
+				<option {{ $product['qty'] == 8 ? 'selected' : '' }}>8</option>
+				<option {{ $product['qty'] == 9 ? 'selected' : '' }}>9</option>
+				<option {{ $product['qty'] == 10 ? 'selected' : '' }}>10</option>
+				<option {{ $product['qty'] == 11 ? 'selected' : '' }}>11</option>
+				<option {{ $product['qty'] == 12 ? 'selected' : '' }}>12</option>
+				<option {{ $product['qty'] == 13 ? 'selected' : '' }}>13</option>
+				<option {{ $product['qty'] == 14 ? 'selected' : '' }}>14</option>
+				<option {{ $product['qty'] == 15 ? 'selected' : '' }}>15</option>
 				
                             </select>
                     </td>              
