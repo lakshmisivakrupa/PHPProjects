@@ -19,6 +19,10 @@ Route::get('/recoverpass', [
      'uses' =>'UserController@getPassword',
      'as' => 'user.getpass'
      ]);
+Route::get('/recovermail',[
+     'uses' =>'UserController@sendMail',
+     'as' => 'user.sendmail'
+     ]);
 
 Route::get('/add-to-cart/{id}', [
      'uses' =>'ProductController@getaddToCart',

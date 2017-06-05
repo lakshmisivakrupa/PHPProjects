@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\User;
@@ -60,6 +60,21 @@ class UserController extends Controller
     public function getPassword()
     {
         return view('user.forgotpass');
+    }
+	public function sendMail(Request $request)
+    {
+        $user = $request['forgot-password'];
+       
+        $data = [
+        'title' => "Request for password recovery",
+        'content' =>'Follow the link to change password'
+
+        ];
+        Mail::send('user.sendmail',$data,function($message)use ($user){
+            $message->to($user,'Advita')->subject('Password Recovery');
+        });
+   
+          return redirect()->route('user.getpass')->with('success',"Mail Sent to '$user'");
     }
     public function getProfile()
     {
