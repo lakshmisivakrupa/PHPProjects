@@ -57,6 +57,8 @@
                     <a href ="{{route('emptyCart')}}" class="btn btn-success pull-right">Empty Cart</a>                
                     </td></tr>
                     <tr><td><a href ="{{route('product.index')}}" type ="button" class="btn btn-success pull-left">Continue Shopping</a></td></tr>
+                    </tbody>
+                    </table>
                     @else
                     <tr><td>There is no Item in Cart</td></tr>
                 </tbody>

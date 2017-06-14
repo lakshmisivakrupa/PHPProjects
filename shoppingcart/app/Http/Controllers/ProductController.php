@@ -73,7 +73,7 @@ class ProductController extends Controller
         $title = $request->input('title');
         $products = DB::table('products')
                 ->where('title', 'like', "%$title%")
-                ->get();
+                ->paginate(1);
         
         return view('shop.index',['products' => $products]);
         
